@@ -1,37 +1,58 @@
+<!-- This will tell the browsert to use a modern version of html.
+If you do not have it, the browser will use a older version. -->
+<!DOCTYPE html>
 
-<!-- Create a paragraph -->
-<p>Links</p>
+<!-- Create a html element -->
+<html>
+  <!-- Create a head element -->
+  <head>
+    <!-- Create a title -->
+     <title>Share services</title>
 
-<!-- Create a link (anchor) to another website.'target="_blank"' is
-optional, because it just tell the web browser to open the link in
-a new tab -->
-<a href="https://drive.google.com/file/d/1LvbMYFO_blgc_XBPiQ8PL6TFHooNPQMs/view?usp=drive_link" target="_blank">
-  CV Besim Noyan
-</a>
+    <!-- Get the CSS code from the void element.
+     rel = relation
+     -->
+    <link rel="stylesheet" href="index.css">
 
-<!-- Create the CSS code -->
-<style>
-  button {
-    height: 36px;
-    width: 105px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 8px; /* spaces */
-  }
-  .button_login {
-    background-color: green;
-    color: rgb(255, 255, 255);
-    /* border: sunken; */
-    height: 36px;
-    width: 105px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+  </head>
+  <!-- Create a body element. Body elements contain all the elements
+   that are visible in the website -->
 
-</style>
+    <!-- Create a logo to Share services -->
+    <a class="share_services" href="https://shareservices.se">
+        <img src="images/logo.png"> Share services
+      <!-- <strong> makes a text bold</strong> -->
+      <!-- <u> makes a text underline</u> -->
+      <!-- <span> span element have no default style</span> -->
+    </a>
+    <!-- &#183;, is a html entity -->
 
-<!-- Create a Login button -->
-<button class="button_login">Login</button>
+    <!-- Create a paragraph -->
 
-<!-- Create a Register button -->
-<button>Login</button>
+    <!-- &#183;, is a html entity -->
+    <p class="line_height"> - </p>
+    <p class="links">Links</p>
+    <ul>
+      <li>
+        <a href="https://drive.google.com/file/d/1LvbMYFO_blgc_XBPiQ8PL6TFHooNPQMs/view?usp=drive_link" target="_blank">
+          CV Besim Noyan
+        </a>
+      </li>
+    </ul>
+
+
+    <!-- Create a link (anchor) to another website.'target="_blank"' is
+    optional, because it just tell the web browser to open the link in
+    a new tab -->
+   
+
+
+
+    <!-- Create a Login button -->
+    <!-- <button class="button_login">Login</button> -->
+
+    <!-- Create a Register button -->
+    <!-- <button>Login</button> -->
+  </body>
+
+</html>

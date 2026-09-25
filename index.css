@@ -1,0 +1,106 @@
+/* Create the CSS code */
+
+p {
+  font-family: Cascadia Mono;
+  font-size: 14px;
+  font-weight: bold;
+  /* font-style: italic; */
+  text-align: left;
+  width: 300px; /* max width, after max width, the text will continue on
+  a new line. */
+  line-height: 0px; /* The spacing between lines */
+  color: rgb(0, 0, 0);
+  /* margin: 0; */
+  margin-top: 5;
+}
+.share_services {
+  font-family: Cascadia Mono;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+  width: 500px; /* max width, after max width, the text will continue on
+  a new line. */
+  line-height: 24px; /* The spacing between lines */
+  color: rgb(0, 102, 204);
+  text-decoration-line: none;
+  margin: 20px; /* outside padding, but for html */
+  margin-bottom: 40px;
+  cursor: pointer;
+}
+
+.line_height {
+  line-height: 100px; 
+  vertical-align: top;
+  margin: 100;
+  padding: 100;
+  color: rgb(255, 255, 255);
+}
+.links {
+  font-family: Cascadia Mono;
+  font-size: 14px;
+  font-weight: bold;
+  /* font-style: italic; */
+  text-align: left;
+  width: 300px; /* max width, after max width, the text will continue on
+  a new line. */
+  /* line-height: 0px; The spacing between lines */
+  color: rgb(0, 0, 0);
+  /* margin: 0; */
+  /* margin-top: 5;
+  padding-top: 2; */
+}
+button {
+  font-weight: bold; /* For the text */
+  /* height: 36px;
+  width: 105px; */
+  border-radius: 5px;
+  /* border-width: 1px; */
+  /* border-style: solid;  This will make the border bold  */
+  cursor: pointer;
+  /* margin-left: 8px;  outside padding, but for html */
+  margin: 8px;
+  /* padding-top: 8px; inside padding, but for html */
+  /* padding-buttom: 8px; inside padding, but for html */
+  padding: 10px;
+  /* transition, will make the transition smooth, of a property */
+  transition:
+  background-color 0.15s,
+  color 0.15s,
+  box-shadow 0.15s; /* 0.15s = 0.15 seconds */
+  /* vertical-align, will align everything based of the top, not the text */
+  vertical-align: top;
+}
+/* Create a pseudo class (:hover) */
+button:hover {
+  /* opacity will make the button less visible as the original.
+  accepted values are 0.0 -> 1.0 */
+  /* opacity: 0.5 */
+  background-color: darkgray;
+  /* box-shadow, will create a shadow around the button.
+  1. The first value, is the right horizontal position of the shadow.
+  2. The second value, is the vertical position of the shadow.
+  3. The third value, will determine how much you want to blur the shadow.
+  4. If you use rgba, instead of rgb, you can add opacity to the color.
+  The opacity is the fourth value.
+  */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+}
+button:active {
+  background-color: gray;
+}
+.button_login {
+  background-color: lightgreen;
+  color: rgba(0, 0, 0);
+  /* border: sunken; */
+  /* height: 36px;
+  width: 105px; */
+  border-radius: 5px;
+  /* font-size: 15px; */
+  cursor: pointer;
+}
+.button_login:hover {
+  background-color: green;
+}
+.button_login:active {
+  background-color: darkgreen;
+}
